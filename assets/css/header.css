@@ -159,10 +159,33 @@ header.search-container {
     text-decoration: underline; 
 }
 
+
+/*CONTENIDO DEL  carrusel metodos de pago */
+
+.text-carousel {
+  background-color:rgb(0, 1, 0); /* Fondo oscuro (puedes cambiarlo) */
+  color: white;              /* Color del texto */
+  padding: 6px;             /* Espaciado interno opcional */
+}
+
 .text-slide i{
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    font-style: normal;
     font-family: 'Tajawal', sans-serif
 }
+.iconsvg {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  fill: white;
+}
+
+a {
+  text-decoration: none;   /* Saca el subrayado */
+  color: inherit;          /* Hereda el color del texto padre */
+  font-style: normal;      /* Por si tiene estilo itálico */
+}
+
 
 
 /* Buscador */
