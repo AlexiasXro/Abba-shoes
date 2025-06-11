@@ -1,21 +1,55 @@
+# 👟 ABBA Shoe E-commerce
 
-# ABBA Shoe E-commerce
+Tienda virtual de calzados con diseño responsivo y funcionalidades interactivas.
 
-Bienvenido al repositorio de ABBA Shoe, una plataforma de comercio electrónico de calzados y accesorios.
+> 🧪 Esta es la **versión frontend** del proyecto, sin conexión a base de datos ni backend funcional.
 
--La tienda virtual fue realizada usando Bootstrap para las vistas .
+---
 
--Cuenta con registro de usuarios y un administrador, el cual debe registrarse con el correo: (  ---), para poder acceder a todas las funciones de admin.
+## 🌐 Sitio en Vivo
 
--La tienda (para usuarios normales) tiene las siguientes secciones:
+👉 [Visitar ABBA Shoe E-commerce](https://tiendashoes-abba.netlify.app/)
 
--index, donde se muestran todos los productos registrados y paginados -Búsqueda por categorías de productos -Vista específica de cada producto -Agregar productos al carrito de compra -Vista del carrito para modificación o eliminación de productos -Uso de Mercado pago para el pago de productos (todavía no esta activo) -Vista de perfil de usuario con Órdenes de compras hechas (si el usuario las tiene)
+---
 
-Para el usuario admin:
+## 🧰 Tecnologías Utilizadas
 
--Panel administrativo para agregar productos -Panel para modificar o eliminar productos
+- **HTML5**
+- **CSS3**
+- **JavaScript (JS)**
+- **Bootstrap 5**
 
-- [Sitio Web en Vivo](https://alexiasxro.github.io/Abba-shoes/)
+---
+
+## 🚀 Características del Usuario
+
+- Página de **inicio** con productos paginados.
+- **Búsqueda por categorías**.
+- **Vista detallada** de cada producto.
+- **Carrito de compras** con opción de modificar o eliminar productos.
+- **Perfil de usuario** con historial de órdenes de compra.
+- **Mercado Pago** integrado *(aún no activo)*.
+
+---
+
+## 🔐 Características del Administrador
+
+> ⚠️ El administrador debe registrarse con el siguiente correo para acceder a funciones avanzadas:  
+> **`( --- )`** ← *[Reemplazar con el correo correspondiente]*
+
+- **Agregar productos**
+- **Editar productos**
+- **Eliminar productos**
+
+---
+
+## 🧩 Proyecto Completo (Frontend + Backend)
+
+👉 [Ver repositorio completo del proyecto]([https://github.com/usuario/proyecto-abba](https://github.com/AlexiasXro/Ecommerce))  
+*Reemplazá este enlace con el repositorio real cuando lo tengas listo.*
+
+---
+
 
 ## Documentación
 
