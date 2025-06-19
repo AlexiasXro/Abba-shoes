@@ -20,13 +20,14 @@
             integrity="sha512-xxxxxx" crossorigin="anonymous" />
         <!--STLYLE CSS-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--STLYLE CSS iconos-->
-        
-            <!-- Boxicons CSS -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../assets/css/carro.css">
-    <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/inicio.css">
+
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../assets/css/carro.css">
+        <link rel="stylesheet" href="../assets/css/header.css">
+        <link rel="stylesheet" href="../assets/css/footer.css">
+        <link rel="stylesheet" href="../assets/css/inicio.css">
+        <link rel="stylesheet" href="../assets/css/btn.css">
 
 
     </head>
@@ -36,13 +37,13 @@
     <a href="./pages/tipopago.html" class="section-carrusel text-center">
         <div class="text-carousel ">
             <div class="text-slide ">
-                <i class='text-white' >&nbspTarjetas de credito</i>
+                <i class='text-white'>&nbspTarjetas de credito</i>
             </div>
             <div class="text-slide ">
                 <i class=' text-white'>&nbspTransferencias Bancarias</i>
             </div>
             <div class="text-slide ">
-                <i class=' text-white'>&nbspDescuentos en Efectivo</i> 
+                <i class=' text-white'>&nbspDescuentos en Efectivo</i>
             </div>
             <div class="text-slide ">
                 <i class=' text-white'>&nbspEnvios gratis desde $75.000</i>
@@ -52,99 +53,91 @@
     <!--carrusel metodos de pagos-->
 
     <!--MENU con boostrap-->
-
     <header class="decoracion">
 
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <a href=".././index.html">
-                    <img src="../assets/logos/blanco.png" alt="Abba Shoes" >
-                </a>
-            </div>
+        <div class="d-flex justify-content-center align-items-center">
 
-            <nav class="navbar navbar-expand-lg ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-subtle">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-bs-toggle="collapse" data-bs-target="#navbarNav"
+
+                    <!-- Botón hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
+                    <!-- Contenido del menú -->
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav justify-content-center">
-                            <li class="nav-item"><a class="nav-link" href="../pages/carro.html">CATALOGO</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/descuentos.html">OFERTAS</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/historia.html">NOSOTROS</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/Local.html">SUCURSALES</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/registro.html">REGISTRATE</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/inicio.html">INICIO</a></li>
+                        <ul class="navbar-nav  mb-2 mb-lg-0">
+                            <li class="nav-item ">
+                                <a href=".././index.html">
+                                    <img src="../assets/img/AS logo new/AbbaShoes Reduced Negative.svg" alt="Abba Shoes"
+                                        height="30px">
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="caracteristicasDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    CATÁLOGO
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="caracteristicasDropdown">
+                                    <li><a class="dropdown-item" href="./pages/carro.html">Todos</a></li>
 
+                                    <li><button class="dropdown-item filtro-btn" data-filtro="zapatos">Zapatos</button>
+                                    </li>
+                                    <li><button class="dropdown-item filtro-btn"
+                                            data-filtro="zapatillas">Zapatillas</button></li>
+                                    <li><button class="dropdown-item filtro-btn"
+                                            data-filtro="sandalias">Sandalias</button></li>
+                                    <li><button class="dropdown-item filtro-btn" data-filtro="botas">Botas</button></li>
+                                    <li><button class="dropdown-item filtro-btn"
+                                            data-filtro="accesorios">Bazar</button></li>
+                                    <li><button class="dropdown-item filtro-btn" data-filtro="sale">Sale</button></li>
+                                    <li><button class="dropdown-item filtro-btn" data-filtro="2x1">2x1</button></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./descuentos.html">OFERTAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./historia.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Local.html">SUCURSALES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./registro.html">REGISTRATE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./inicio.html">INICIO</a>
+                            </li>
+                        </ul>
+
+                        <!-- Formulario de búsqueda -->
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline" type="submit">Buscar</button>
-                          </form>
+                            <input class="form-control me-2  custom-input " type="search" placeholder="Buscar"
+                                aria-label="Buscar">
+                            <button class="button-deco" type="submit">Buscar</button>
+                        </form>
                     </div>
                 </div>
             </nav>
+
         </div>
 
     </header>
 
     <!--////////////////-->
         
-            <!-- Segundo renglón del header -->
-        
-            <!-- Segundo navegador -->
-            <nav class="navbar navbar-expand-md navbar-primary bg-subtlet">
-                <div class="container">
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-bs-toggle" href="#" id="caracteristicasDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class='bx bx-category-alt' ></i> Categoria
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="caracteristicasDropdown">
-                                    <li><button class="dropdown-item">Zapatos</button></li>
-                                    <li><button class="dropdown-item">Zapatillas</button></li>
-                                    <li><button class="dropdown-item">Sandalias</button></li>
-                                    <li><button class="dropdown-item">Botas</button></li>
-                                    <li><button class="dropdown-item">Accesorios</button></li>
-                                    <li><button class="dropdown-item">Sale</button></li>
-                                    <li><button class="dropdown-item">2x1</button></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class='bx bx-user-circle' id=""></i> Usuario
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class='bx bx-message-rounded-detail' ></i> Contactanos
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-bs-toggle" href="#" id="filtrarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class='bx bx-filter'></i> Filtrar
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="filtrarDropdown">
-                                    <li><button class="dropdown-item">Precio Menor</button></li>
-                                    <li><button class="dropdown-item">Precio Mayor</button></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <!-- Icono del carrito -->
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class='bx bxs-cart'id="cart-icon"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--Cart-->
-                <div class="cart">
+           
+            <nav >
+                
+                 <!--Cart-->
+                 <div class="cart">
                     <h2 class="cart-title">Compra</h2>
-                    <form action="insertarOrdenproducto.php" method="post" class="OrdenProducto-form"></form>
+                    <form action="insertarOrdenproducto.html" method="post" class="OrdenProducto-form"></form>
                     <!--Content-->
                     <div class="cart-content">
         
@@ -162,12 +155,9 @@
                     <i class="bx bx-x" id="close-cart"></i>
                 </div>
             </nav>
-            
-    
-        </header>
 
 
-        <!-- Section: Design Block -->
+    <!-- Section: Design Block -->
     <section class="background-radial-gradient overflow-hidden">
 
 
@@ -230,92 +220,105 @@
                                     </label>
                                 </div>
 
-                                <!-- Submit button -->
-                                <button type="submit" class="btn btn-primary btn-block mb-4">
-                                    Registrate
+
+
+                                
+                                <!-- Botón de registro -->
+                                <button type="submit" class="btn btn-primary btn-lg w-100 mb-3">
+                                  Registrate
                                 </button>
+
 
                                 <!-- Register buttons -->
                                 <div class="text-center">
-                                    <p>o regístrate con:</p>
-                                    <button type="button" class="btn btn-link btn-floating mx-1">
-                                        <i class='bx bxl-facebook-circle'></i>
-                                    </button>
+                                    <!-- Botón de Google -->
+                                    <a href="#" class="btn btn-outline-danger btn-lg btn-block w-100  mb-2">
+                                        <i class="bi bi-google me-2"></i> Registrarse con Google
+                                    </a>
 
-                                    <button type="button" class="btn btn-link btn-floating mx-1">
-                                        <i class='bx bxl-google' ></i>
-                                    </button>
-                                </div>
-                            </form>
+                                    <!-- Botón de Facebook -->
+                                    <a href="#" class="btn btn-outline-primary btn-lg  btn-block w-100 ">
+                                        <i class="bi bi-facebook me-2"></i> Registrarse con Facebook
+                                    </a>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
     <!-- Section: Design Block -->
     </section>
-       
 
 
 
-<!--footer-->
-<footer class="  text-left text-secondary mt-auto ">
-    <div class="decoracionfooter pie-pagina">
-        <div class="container p-4">
-            <div class="row">
-                <div class="col-md-4">
-                    <figure>
-                        <a href="../index.html">
-                            <img src="../assets/logos/logoBcuadro.png" alt="Logo de Abba Shoe" width="250px"
-                                class="img-fluid">
-                        </a>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <h5>Contacto</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="https://www.instagram.com/abba.shoe/" class="redes-sociales" ><img src="../assets/logos/instagram.png"class="redes-img" alt="Instagram">Instagram AbbaShoes</a></li>
-                            <li><a href="https://www.instagram.com/abba.shoe/" class="redes-sociales" ><img src="../assets/logos/facebook.png"class="redes-img" alt="Facebook">Facebook AbbaShoes</a></li>
-                            <li><a href="https://web.whatsapp.com/" class="redes-sociales" ><img src="../assets/logos/messenger.png" class="redes-img" alt="WhatsApp">+543644xxxxxx</a></li>
+
+  <!--footer-->
+    <footer class="  text-left text-seconda ">
+        <div class="decoracionfooter pie-pagina">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+
+
+                        <img src="../assets/img/AS logo new/AbbaShoes Negative.svg" alt="Logo de Abba Shoe" width="250px"
+                            class="">
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled">
+
+                            <li><a href="https://www.instagram.com/abba.shoe/" class="redes-sociales"><img
+                                        src="../assets/logos/instagram.png" class="redes-img" alt="Instagram">Instagram
+                                    AbbaShoes</a></li>
+                            <li><a href="https://www.instagram.com/abba.shoe/" class="redes-sociales"><img
+                                        src="../assets/logos/facebook.png" class="redes-img" alt="Facebook">Facebook
+                                    AbbaShoes</a></li>
+                            <li><a href="https://web.whatsapp.com/" class="redes-sociales"><img
+                                        src="../assets/logos/messenger.png" class="redes-img"
+                                        alt="WhatsApp">+543644xxxxxx</a></li>
                             <li><a href="#" class="text-secondary">Email: AbbaShoes@gmail.com</a></li>
-                            <li><a href="../pages/comocomprar.html" class="text-secondary" >Ayuda</a></li>
-                            <li><a href="../pages/preguntas.html" class="text-secondary" >Preguntas Frecuentes</a></li>
+                            <li><a href="../pages/preguntas.html" class="text-secondary">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Horarios Abierto</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../pages/Local.html" class="text-secondary">Lunes a Miércoles de 08:30 a 12:00
+                                    hs</a></li>
+                            <li><a href="../pages/Local.html" class="text-secondary">Jueves 12:30 a 18:30 hs</a></li>
+                            <li><a href="../pages/Local.html" class="text-secondary">Viernes 14:30 a 20:30 hs</a></li>
+                            <li><a href="../pages/Local.html" class="text-secondary">Sábado 09:00 a 11:00 hs</a></li>
+                            <li><a href="../pages/Local.html" class="text-secondary">Domingo cerrado</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-20">
+                    <hr>
+                    <a
+                        href="https://www.instagram.com/arominaca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <p class="text-secondary">Derechos Reservados © 2024 KNDAlexias</p>
+                    </a>
 
-                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <h5>Horarios Abierto</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="../pages/Local.html" class="text-secondary">Lunes a Miércoles de 08:30 a 12:00 hs</a></li>
-                        <li><a href="../pages/Local.html" class="text-secondary">Jueves 12:30 a 18:30 hs</a></li>
-                        <li><a href="../pages/Local.html" class="text-secondary">Viernes 14:30 a 20:30 hs</a></li>
-                        <li><a href="../pages/Local.html" class="text-secondary">Sábado 09:00 a 11:00 hs</a></li>
-                        <li><a href="../pages/Local.html" class="text-secondary">Domingo cerrado</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-20">
-                <hr>
-                <a href="https://www.instagram.com/arominaca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                    <p class="text-secondary">Derechos Reservados © 2024 KNDAlexias</p>
-                </a>
-                
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<!--js boostrap-->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-<!--js lieso-->
-<script src="../assets/js/anuncio.js"></script>
-<script src="../assets/js/cart.js"></script>
-<script src="../assets/js/anuncio.js"></script>
-<script src="../assets/js/carro.js"></script>
+    <!--js boostrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--js lieso-->
+    <script src="../assets/js/anuncio.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/anuncio.js"></script>
+    <script src="../assets/js/carro.js"></script>
 
 </body>
 

@@ -1,0 +1,60 @@
+/*BOTON CON ESTILO MINIMALISTA Y AMARILLO*/
+/*<button class="button-deco"><span></span>button</button>*/
+
+.button-deco {
+  padding: 0.8em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  color: transparent;
+  border: 2px solid #FFDE59;
+  font-size: 14px;
+  position: relative;
+  font-family: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button-deco::before {
+  content: "buscar";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #010b1a;
+  color: #FFDE59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.button-deco:hover::before {
+  left: 100%;
+  transform: scale(0) rotateY(360deg);
+  opacity: 0;
+}
+
+.button-deco::after {
+  content: "buscar";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color:#010b1a);
+  color: #FFDE59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: scale(0) rotateY(0deg);
+  opacity: 0;
+}
+
+.button-deco:hover::after {
+  left: 0;
+  transform: scale(1) rotateY(360deg);
+  opacity: 1;
+}

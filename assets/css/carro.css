@@ -91,11 +91,17 @@ section{
     color: var(--text-color);
     cursor: pointer;
 }
+.cart-img{
+  height: auto;
+  width: 4rem;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;  
+}
 
 
 .cart-box{
     display: grid;
-    grid-template-columns: 32% 50% 18%;
+    grid-template-columns: 32% 30% 18%;
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;

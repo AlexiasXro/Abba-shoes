@@ -14,11 +14,13 @@ font-family: 'Open Sans', sans-serif;
 :root {
     --gradiente-color-1: #814C25; /* Primer */
     --gradiente-color-2: #FFDE59; /* Segundo */
-    --color-texto:#ddd2d2;
-    --color-fondo:#091220;
-    --color-body:#0D1A2D;
+   
+    --color-textoneg:#ddd2d2;
+    --color-textopos:#171427;
+   
+    --color-fondo: #010b1a;
+   
     --main-color: #fd4646;
-    --text-color: #171427;
     --bg--color: #fff0f0;
 
 }
@@ -28,42 +30,49 @@ font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     
-}
-h1{
-    color: #171427;
-}
-
-header  {
-    background-color: var(--color-fondo);
-
-}
-
-.decoracion {
-    border-top: 5px solid transparent; 
-    border-image: linear-gradient(to right, #814C25, #FFDE59); 
-    border-image-slice: 1; 
-    height: 100px;/*altura del head*/
-}
-/*logo header NOSE COMO UBICARLO A LA IZQUIERDA*/
-
-.logo img {
-    width: 80px; 
-    height: auto;
-    margin: 10px;
-    opacity: 0.9; 
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); 
     
 }
 
+
+header  {
+    background: var(--color-fondo)
+
+}
+
+/*LINEAS DEGRADADA*/
+.decoracion {
+    border-top: 3px solid transparent; 
+    border-image: linear-gradient(to right, #814C25, #FFDE59); 
+    border-image-slice: 1; 
+  
+}
+
+.custom-input {
+  max-width: 190px;
+  background-color:rgb(1, 7, 16);
+  border: 2px solid #FFDE59;
+  border-radius: 1px;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  color:var(--color-textoneg)
+}
+
+.custom-input:focus {
+  color:var(--color-textoneg)
+  border: 1.5px solid #FFDE59;
+  background-color:rgb(5, 36, 82);
+}
 
 /*-*/
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 50px; /* Espacio entre elementos de la lista */
+    gap: 50px; 
     margin-right: 10px;
    
-    align-items: center;
+    
 }
 .navbar {
     background-color: var(--color-fondo); /* Color de fondo */
@@ -96,7 +105,7 @@ header.search-container {
     justify-content: space-between;
     background-color: #f8f9fa; 
     padding: 10px 20px; 
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 1px 4px rgba(62, 41, 41, 0.1); 
     margin-top: 100px;
 }
 /*Cart calsados*/
